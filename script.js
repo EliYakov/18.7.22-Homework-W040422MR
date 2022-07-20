@@ -22,6 +22,10 @@ function setCardInputs(name, age) {
   Card.innerHTML = name + " (" + age + ")";
 }
 
+function setCardCountry(country) {
+  Card.innerHTML = country;
+}
+
 function setCardColor(color) {
   Card.style.backgroundColor = color;
 }
@@ -40,7 +44,9 @@ function handleInputsSubmit() {
     <li class="list-group-item">` +
     ageInput.value +
     `</li>
-    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">` +
+    countryInput.value +
+    `</li>
     <li class="list-group-item">A third item</li>
   </ul>
 </div>`;
